@@ -8,7 +8,26 @@
     min-width: 200px;
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
     border-radius: 4px;
     cursor: pointer;
     padding: 10px 32px;
+
+    .footer & {
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #2196F3;
+    background: #2196F3;
+    padding: 0;
+        }
 }
+.mailing__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #2196F3;
+    background: #2196F3;
+    width: 200px;
+  }
