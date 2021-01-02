@@ -3,6 +3,9 @@
   }
 .footer .address {
     width: 231px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
   }
 .footer__mail a,
 .footer__tel a {
@@ -22,11 +25,6 @@
     padding-top: 60px;
   }
   
-  .footer .address {
-    display: flex;
-    flex-direction: column;
-    margin-right: 70px;
-  }
   .footer .item:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -76,25 +74,6 @@
     color: rgba(255, 255, 255, 0.6);
   }
   
-  // .mailing__btn {
-  //   font-weight: 700;
-  //   font-size: 16px;
-  //   line-height: 1.875;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-    
-  //   letter-spacing: 0.06em;
-  //   border: #2196F3;
-  //   cursor: pointer;
-
-  //   background: #2196F3;
-  //   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  //   border-radius: 4px;
-    
-  //   color: #FFFFFF;
-  //   width: 200px;
-  // }
   .mailing__icon {
     width: 24px;
     height: 24px;
