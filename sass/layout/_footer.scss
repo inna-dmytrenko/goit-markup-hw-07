@@ -13,9 +13,7 @@
   }
   
 .footer .link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
+    @include font (400, 14px, 1.714);
     letter-spacing: 0.03em;
   }
   
@@ -28,14 +26,10 @@
   .footer .item:not(:last-child) {
     margin-bottom: 9px;
   }
-  .footer .container {
-    display: flex;
-  }
+  
   
   .mailing__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
+    @include font (700, 14px, 1.143);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-top: 12px;
@@ -62,12 +56,12 @@
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0);
     outline: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font (400, 16px, 1.25);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     padding: 0;
+
+
   }
   .mailing__email-input::placeholder{
     font-weight: 400;

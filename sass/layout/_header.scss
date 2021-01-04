@@ -5,9 +5,7 @@
         
    
     .address a{
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.143;
+        @include font (500, 14px, 1.143);
         letter-spacing: 0.02em;
         color: #757575;
             
@@ -22,11 +20,7 @@
     &__tel {
         display: flex;    
       }
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
+    
     .address a:hover,
     .address a:focus {
         color: #2196F3;
@@ -37,9 +31,7 @@
         align-items: center;
 
     &__item{
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.143;
+        @include font (500, 14px, 1.143);
         letter-spacing: 0.02em;
         
         position: relative;
@@ -61,15 +53,12 @@
 }
   
 .block::after  {
-
-  display: block;
+  @include pseudo ( block, absolute, '');
   width:0;
-  content: '';
-  position: absolute;
+
   border-bottom: 4px solid #2196F3;
   border-radius: 2px;
   
-
   transform: translateY(52px);
   transition: 250ms;
   transition-property: all;

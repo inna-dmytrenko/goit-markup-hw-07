@@ -47,7 +47,6 @@
     height: 30px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    /* box-sizing: border-box; */
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -65,9 +64,7 @@
   }
 
   .modal__title {
-   font-weight: 700;
-   font-size: 20px;
-   line-height: 1.150;
+   @include font (700, 20px, 1.15);
    text-align: center;
    letter-spacing: 0.03em;
    margin-bottom: 12px;
@@ -81,9 +78,7 @@
  }
  
  .modal__form-field {
-   font-weight: 400;
-   font-size: 12px;
-   line-height: 1.167;
+  @include font (400, 12px, 1.167);
    letter-spacing: 0.01em;
 
    color: #757575;
@@ -141,18 +136,12 @@
     border-color: #2196F3;
   }
  }
- 
- 
- 
- 
  .modal__form-policy-text{
    cursor: pointer;
    display: inline-block;
    margin-left: auto;
    margin-right: auto;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 1.714;
+   @include font (400, 14px, 1.714);
    letter-spacing: 0.03em;
    
    margin-bottom: 20px;
@@ -161,6 +150,7 @@
 
    &::before {
     display: inline-block;
+    content: "";
     margin-right: 9px;
     vertical-align: text-top;
     width: 18px;
@@ -169,7 +159,7 @@
     border: 2px solid #212121;
     border-radius: 4px;
     
-    content: "";
+    
     .modal__form-policy:checked + & {
         background-image:  url(../images/vector.svg);
         background-color: #2196F3;
@@ -190,9 +180,7 @@
 
  
  .modal__form-policy-link {
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 1.714;
+   @include font (400, 14px, 1.714);
    letter-spacing: 0.03em;
    text-decoration-line: underline;
 
@@ -204,9 +192,7 @@
    width: 200px;
    border: 1px solid #2196F3;
    border-radius: 25px;
-   font-weight: 600;
-   font-size: 12px;
-   line-height: 1.333;
+   @include font (600, 12px, 1.333);
    letter-spacing: 0.09em;
    text-transform: uppercase;
    background-color: transparent;

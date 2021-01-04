@@ -1,7 +1,6 @@
 .social-list {
     display: flex;
     justify-content: center;
-    // padding: 0 32px;
 }
 
 .social-list__link {
@@ -52,9 +51,7 @@
   }
 
   .social-links__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
+    @include font (700, 14px, 1.143);
     letter-spacing: 0.03em;
     text-transform: uppercase;
 

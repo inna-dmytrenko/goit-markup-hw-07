@@ -1,7 +1,5 @@
 .client__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
+    @include font (700, 36px, 1.167);
     letter-spacing: 0.03em;
 
     text-align: center;
@@ -36,7 +34,7 @@
     &:focus {
     border: 1px solid #2196F3;
 
-  }
+    }
   }
   .client-list__icon {
     fill: #AFB1B8;
@@ -45,8 +43,8 @@
     .client-list__link:hover &,
     .client-list__link:focus & {
     fill:#2196F3;
-    /* background: #2196F3; */
-  }
+    
+    }
     
   }
   

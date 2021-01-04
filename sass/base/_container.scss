@@ -2,4 +2,22 @@
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+
+    .work-examples &{
+        text-align: center; 
+      }
+    
+    .footer & {
+        display: flex;
+    }  
+    .header & {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .hero & {
+        text-align: center;
+      }
+    
+
 } 

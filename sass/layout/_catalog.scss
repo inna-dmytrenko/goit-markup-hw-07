@@ -1,7 +1,5 @@
 .catalog__btn {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.625;
+    @include font (500, 16px, 1.625);
     letter-spacing: 0.03em;
     color: #212121;
 
@@ -24,9 +22,7 @@
  
 
   .catalog__subtitle {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+    @include font (700, 18px, 2);
     letter-spacing: 0.06em;
     color: #212121;
 
@@ -34,9 +30,7 @@
   }
   
   .catalog__desc {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.875;
+    @include font (400, 16px, 1.875);
     letter-spacing: 0.03em;
     color: #757575;
   }
@@ -45,7 +39,7 @@
     display: flex;
     justify-content: center; 
     margin-bottom: 50px;
-    /* outline: 1px solid #e88718; */
+    
   }
   .catalog__items {
     display: flex;
@@ -65,13 +59,7 @@
     }
   }
   
-  .menu-catalog__item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-
-  .menu-catalog__item:not(:last-child) {
-    margin-right: 8px;
-  }
+  
   
   .title {
     padding: 20px 24px;
@@ -81,7 +69,14 @@
   .menu-catalog {
     padding-top: 94px;
     padding-bottom: 64px;
-    /* background-color: rgb(75, 104, 82); */
+    
+    &__item:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  
+    &__item:not(:last-child) {
+      margin-right: 8px;
+    }
   }
   .catalog__item-img-wrapper {
     position: relative;
@@ -95,11 +90,8 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-   
-
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.556;
+ 
+    @include font (400, 18px, 1.556);
     letter-spacing: 0.03em;
     background-color: rgba(33, 150, 243, 0.9);
 
